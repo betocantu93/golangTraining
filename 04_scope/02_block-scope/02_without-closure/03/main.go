@@ -17,8 +17,6 @@ func main() {
 	increment()
 	increment()
 
-
-
 	h = increment
 
 	another()

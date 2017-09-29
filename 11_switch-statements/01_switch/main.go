@@ -12,7 +12,6 @@ func main() {
 
 	fmt.Scanf("%s %s", &name, &apellido)
 
-
 	switch name {
 
 	case "Rosita":
@@ -25,8 +24,8 @@ func main() {
 		fmt.Println("Wassup stranger")
 	}
 
-	fmt.Printf("%v %v \n",indirect, *indirect)
+	fmt.Printf("%v %v \n", indirect, *indirect)
 	*indirect = "Salazar"
-	fmt.Printf("%v %v \n",indirect, apellido)
+	fmt.Printf("%v %v \n", indirect, apellido)
 
 }

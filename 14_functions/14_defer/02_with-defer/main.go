@@ -10,7 +10,7 @@ func world() {
 	fmt.Println("world!")
 }
 
-func mexico(){
+func mexico() {
 	fmt.Println("Mexico")
 }
 

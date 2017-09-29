@@ -6,9 +6,7 @@ func main() {
 
 	var name string
 
-
 	fmt.Scanf("%s", &name)
-
 
 	switch name {
 
@@ -22,7 +20,5 @@ func main() {
 	default:
 		fmt.Println("Wassup stranger")
 	}
-
-
 
 }
