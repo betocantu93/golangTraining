@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func filterInts(numbers []int, callback func(int) bool) []int {
+func filterInts(callback func(int) bool, numbers []int) []int {
 
 	xs := []int{}
 
@@ -19,9 +19,12 @@ func filterInts(numbers []int, callback func(int) bool) []int {
 
 func main() {
 
-	xs := filterInts([]int{1, 2, 3, 4, 5, 6, 7, 8}, func(n int) bool {
+	arr := []int{1, 2, 3, 4, 5, 6, 7, 8}
+
+	xs := filterInts(func(n int) bool {
 		return n > 5
-	})
+	}, arr)
+
 
 	fmt.Println(xs)
 
