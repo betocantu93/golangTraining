@@ -25,7 +25,6 @@ func main() {
 		return n > 5
 	}, arr)
 
-
 	fmt.Println(xs)
 
 	x := filter(func(x interface{}) bool {
