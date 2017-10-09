@@ -1,0 +1,19 @@
+Go is Object Oriented
+
+(1) Encapsulation
+
+state ("fields")
+behaivior ("methods")
+exported/unexported
+
+(2) Reusuability
+inheritence ("embedded types")
+
+(3) Polymorphism
+interfaces
+
+(4) Overriding
+"Promotion"
+
+////////
+Traditional OOP
