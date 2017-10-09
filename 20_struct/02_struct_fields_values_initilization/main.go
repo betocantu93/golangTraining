@@ -4,8 +4,8 @@ import "fmt"
 
 type person struct {
 	first string `json:first_name`
-	last string
-	age int
+	last  string
+	age   int
 }
 
 func main() {
@@ -20,6 +20,5 @@ func main() {
 
 	fmt.Println(persons)
 	fmt.Printf("%T - %v - %v - %v \n", p3, p3.first, p3.last, p3.age)
-
 
 }

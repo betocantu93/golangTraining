@@ -1,9 +1,9 @@
 package main
 
 import (
-	"net/http"
 	"bufio"
 	"fmt"
+	"net/http"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 
 	buckets := make([][]string, 12)
 
-	for i := 0; i <= 12; i ++ {
+	for i := 0; i <= 12; i++ {
 		buckets = append(buckets, []string{})
 	}
 

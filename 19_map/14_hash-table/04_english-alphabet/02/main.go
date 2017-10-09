@@ -1,9 +1,9 @@
 package main
 
 import (
-	"net/http"
-	"fmt"
 	"bufio"
+	"fmt"
+	"net/http"
 )
 
 func main() {

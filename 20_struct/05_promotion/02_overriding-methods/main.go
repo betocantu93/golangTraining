@@ -4,8 +4,8 @@ import "fmt"
 
 type Person struct {
 	First string
-	Last string
-	Age int
+	Last  string
+	Age   int
 }
 
 type DoubleZero struct {

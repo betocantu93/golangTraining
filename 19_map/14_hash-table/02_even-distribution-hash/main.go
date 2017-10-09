@@ -1,9 +1,9 @@
 package main
 
 import (
-	"net/http"
 	"bufio"
 	"fmt"
+	"net/http"
 )
 
 func main() {
@@ -33,7 +33,7 @@ func main() {
 
 }
 
-func HashBucket(word string, buckets int)  int {
+func HashBucket(word string, buckets int) int {
 
 	var sum int
 

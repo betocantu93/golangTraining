@@ -10,7 +10,7 @@ type Person struct {
 
 type DoubleZero struct {
 	Person
-	First string
+	First         string
 	LicenseToKill bool
 }
 
@@ -33,7 +33,7 @@ func main() {
 			Last:  "Cantu",
 			Age:   48,
 		},
-		First: "Yahuda",
+		First:         "Yahuda",
 		LicenseToKill: true,
 	}
 
@@ -43,7 +43,7 @@ func main() {
 			Last:  "Hinojosa",
 			Age:   12,
 		},
-		First: "Tom",
+		First:         "Tom",
 		LicenseToKill: false,
 	}
 
@@ -53,7 +53,7 @@ func main() {
 			"Santillar",
 			12,
 		},
-		 "Stephen",
+		"Stephen",
 		false,
 	}
 
