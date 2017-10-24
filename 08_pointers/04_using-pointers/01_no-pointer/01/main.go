@@ -14,8 +14,6 @@ func main() {
 
 	zero(x)
 
-	
-
 	fmt.Println(x)
 
 }
