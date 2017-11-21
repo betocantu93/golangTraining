@@ -1,11 +1,11 @@
 package main
 
 import (
-	"strconv"
 	"fmt"
+	"strconv"
 )
 
-func main(){
+func main() {
 	var x = 12
 	var y = "I have this many: " + strconv.Itoa(x)
 

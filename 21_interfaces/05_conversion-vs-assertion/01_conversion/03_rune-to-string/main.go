@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	var x rune = 'a'
 	var y int32 = 'b'
 	fmt.Println(x)

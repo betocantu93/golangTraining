@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	n := 1000
 	c := make(chan int)
 	done := make(chan bool)
 
-	go func(){
+	go func() {
 		for i := 0; i < 100; i++ {
 			c <- i
 		}
@@ -16,10 +16,10 @@ func main(){
 	}()
 
 	for i := 0; i < n; i++ {
-		go func(){
+		go func() {
 
 			for n := range c {
-				fmt.Println(i,"function",n)
+				fmt.Println(i, "function", n)
 			}
 			done <- true
 

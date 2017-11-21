@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 type vehicle struct {
-	Seats int
+	Seats    int
 	MaxSpeed int
-	Color string
+	Color    string
 }
 
 type car struct {
 	vehicle
 	Wheels int
-	Doors int
+	Doors  int
 }
 
 type plane struct {
@@ -24,12 +24,11 @@ type boat struct {
 	Length int
 }
 
-func (v vehicle) Specs(){
+func (v vehicle) Specs() {
 	fmt.Printf("Seats %v, max speed %v, color $v\n", v.Seats, v.MaxSpeed, v.Color)
 }
 
-
-func main(){
+func main() {
 
 	prius := car{}
 	tacoma := car{}
@@ -44,7 +43,7 @@ func main(){
 	sanger := boat{}
 	nautique := boat{}
 	malibu := boat{}
-	boats := []boat{sanger,nautique,malibu}
+	boats := []boat{sanger, nautique, malibu}
 
 	for key, value := range cars {
 		fmt.Println(key, " - ", value)

@@ -5,15 +5,15 @@ import "fmt"
 type vehicles interface{}
 
 type vehicle struct {
-	Seats int
+	Seats    int
 	MaxSpeed int
-	Color string
+	Color    string
 }
 
 type car struct {
 	vehicle
 	Wheels int
-	Doors int
+	Doors  int
 }
 
 type plane struct {
@@ -26,12 +26,11 @@ type boat struct {
 	Length int
 }
 
-func (v vehicle) Specs(){
+func (v vehicle) Specs() {
 	fmt.Printf("Seats %v, max speed %v, color $v\n", v.Seats, v.MaxSpeed, v.Color)
 }
 
-
-func main(){
+func main() {
 
 	prius := car{}
 	tacoma := car{}
@@ -53,6 +52,5 @@ func main(){
 	for key, value := range rides {
 		fmt.Println(key, " - ", value)
 	}
-
 
 }

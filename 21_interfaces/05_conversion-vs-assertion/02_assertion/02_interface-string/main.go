@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func main(){
-	var name interface {} = "Sydney"
+func main() {
+	var name interface{} = "Sydney"
 	str, ok := name.(string)
 	if ok {
 		fmt.Println(str)
-	}else{
+	} else {
 		fmt.Println("Error")
 	}
 }

@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	c := incrementor()
-	for n := range puller(c){
+	for n := range puller(c) {
 		fmt.Println(n)
 	}
 }
@@ -14,8 +14,8 @@ func incrementor() <-chan int {
 
 	out := make(chan int)
 
-	go func(){
-		for i := 0; i <= 100; i ++ {
+	go func() {
+		for i := 0; i <= 100; i++ {
 			out <- i
 		}
 		close(out)
@@ -28,7 +28,7 @@ func puller(c <-chan int) <-chan int {
 
 	out := make(chan int)
 
-	go func(){
+	go func() {
 		var sum int
 		for n := range c {
 			sum += n

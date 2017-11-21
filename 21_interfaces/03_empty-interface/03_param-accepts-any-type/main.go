@@ -20,7 +20,7 @@ func specs(a interface{}) {
 	fmt.Println(a)
 }
 
-func main(){
+func main() {
 	fido := dog{animal{"woof"}, true}
 	fifi := cat{animal{"meow"}, true}
 

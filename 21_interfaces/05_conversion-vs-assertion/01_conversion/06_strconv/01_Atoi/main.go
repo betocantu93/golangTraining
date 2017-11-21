@@ -1,11 +1,11 @@
 package main
 
 import (
-	"strconv"
 	"fmt"
+	"strconv"
 )
 
-func main(){
+func main() {
 	var x = "12"
 	var y = 6
 	z, _ := strconv.Atoi(x)

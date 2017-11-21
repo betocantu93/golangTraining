@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	rem := 2.74
 	fmt.Printf("%T\n", rem)
 	fmt.Printf("%T\n", int(rem))
@@ -10,7 +10,5 @@ func main(){
 	var val interface{} = 7
 	fmt.Printf("%T\n", val)
 	fmt.Printf("%T\n", val.(int))
-
-
 
 }

@@ -1,13 +1,13 @@
 package main
 
 import (
-	"sync"
 	"fmt"
+	"sync"
 )
 
 var wg sync.WaitGroup
 
-func main(){
+func main() {
 	wg.Add(2)
 	go foo()
 	go bar()

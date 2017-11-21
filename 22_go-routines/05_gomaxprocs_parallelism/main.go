@@ -1,19 +1,19 @@
 package main
 
 import (
-	"sync"
 	"fmt"
-	"time"
 	"runtime"
+	"sync"
+	"time"
 )
 
 var wg sync.WaitGroup
 
-func init(){
+func init() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 }
 
-func main(){
+func main() {
 	fmt.Println(runtime.NumCPU())
 	wg.Add(2)
 	go foo()

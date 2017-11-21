@@ -1,34 +1,34 @@
 package main
 
 import (
-	"sync"
 	"fmt"
+	"sync"
 )
 
-func main(){
+func main() {
 
 	c := make(chan int)
 
 	var wg sync.WaitGroup
 	wg.Add(2)
 
-	go func(){
+	go func() {
 		wg.Add(1)
-		for i := 0; i < 10; i ++ {
+		for i := 0; i < 10; i++ {
 			c <- i
 		}
 		wg.Done()
 	}()
 
-	go func(){
+	go func() {
 		wg.Add(1)
-		for i := 0; i < 10; i ++ {
+		for i := 0; i < 10; i++ {
 			c <- i
 		}
 		wg.Done()
 	}()
 
-	go func(){
+	go func() {
 		wg.Wait()
 		close(c)
 	}()
@@ -36,6 +36,5 @@ func main(){
 	for n := range c {
 		fmt.Println(n)
 	}
-
 
 }
